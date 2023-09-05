@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "s3",
+    "aws-region",
+    "aws-creds"
+]

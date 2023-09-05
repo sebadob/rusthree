@@ -1,0 +1,14 @@
+[package]
+name = "aws-region"
+version = "0.1.0"
+authors = ["Sebastian Dobe <sebastiandobe@mailbox.org>"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "awsregion"
+path = "src/lib.rs"
+
+[dependencies]
+thiserror = "1"
+serde = { version = "1", features = ["derive"], optional = true }

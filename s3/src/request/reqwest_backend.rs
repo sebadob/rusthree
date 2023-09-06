@@ -80,7 +80,7 @@ impl<'a> Request for HttpRequest<'a> {
     async fn response_data(&self, etag: bool) -> Result<ResponseData, S3Error> {
         let response = self.response().await?;
         let status_code = response.status().as_u16();
-        let mut headers = response.headers();
+        let headers = response.headers();
         let response_headers = headers
             .iter()
             .map(|(k, v)| {
